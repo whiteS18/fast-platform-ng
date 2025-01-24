@@ -1,0 +1,33 @@
+.login-page {
+  height: 100vh; // 占满整个视口高度
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url('/bg.jpg');
+  background-size: cover; // 背景图覆盖整个容器
+  background-position: center; // 背景图居中
+  background-repeat: no-repeat; // 防止背景图重复
+
+  .login-form {
+    max-width: 20vw;
+    width: 100%;
+    padding: 2vw;
+    background-color: rgba(255, 255, 255, 0.8); // 半透明背景
+    border-radius: 4px; // 圆角
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); // 阴影
+
+    .login-form-head {
+      text-align: center;
+      margin-bottom: 4vh;
+    }
+
+    nz-form-item {
+      margin-bottom: 2vh;
+    }
+
+    &-button {
+      width: 100%;
+      margin-top: 6vh;
+    }
+  }
+}
